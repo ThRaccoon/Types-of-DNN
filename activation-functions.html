@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    
+        <title>Activation Functions</title>
+    </head>
+    
+    <body> 
+        <!-- Header -->
+        <header class="header"> 
+            <h1>Activation Functions Types</h1>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+            
+            <!-- Navigation Link to Index -->
+            <nav>
+                <a href="index.html" class="nav-link">DNN Types</a>
+            </nav>
+        </header>
+        
+        <!-- Left Sidebar -->
+        <div class="flexbox"> 
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="#what-is-activation">What is an Activation Function?</a></li>
+                    <li><a href="#relu">ReLU</a></li>
+                    <li><a href="#sigmoid">Sigmoid</a></li>
+                    <li><a href="#tanh">Tanh</a></li> 
+                    <li><a href="#softmax">Softmax</a></li> 
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- What is an Activation Function? Section -->
+                <div class="type-box" id="what-is-activation">
+                    <h3 class="option">What is an Activation Function?</h3>
+                    <p class="description">
+                        An activation function is a mathematical function applied to a neural network's node output. It determines 
+                        whether a neuron should be activated or not. Activation functions introduce non-linear properties to the 
+                        network, enabling it to learn complex patterns. Without activation functions, the network would behave 
+                        like a linear model, regardless of its depth.
+                    </p>
+                </div>
+                <div class="separator"></div>
+
+                <!-- ReLU -->
+                <div class="type-box" id="relu">
+                    <h3 class="list-header">Rectified Linear Unit (ReLU)</h3>
+                    <ul>
+                        <li class="list-option"><strong>Equation:</strong> <span class="list-description">f(x) = max(0, x)</span></li>
+                        <li class="list-option"><strong>Purpose:</strong> <span class="list-description">Introduces non-linearity and mitigates the vanishing gradient problem.</span></li>
+                        <li class="list-option"><strong>Key Feature:</strong> <span class="list-description">Efficient and widely used in deep learning architectures.</span></li>
+                    </ul>
+                </div>
+                <img src="images/ReLU.png" width="400" height="400" alt="Rectified Linear Unit (ReLU)">
+                <div class="separator"></div>
+
+                <!-- Sigmoid -->
+                <div class="type-box" id="sigmoid">
+                    <h3 class="list-header">Sigmoid</h3>
+                    <ul>
+                        <li class="list-option"><strong>Equation:</strong> <span class="list-description">f(x) = 1 / (1 + e^(-x))</span></li>
+                        <li class="list-option"><strong>Purpose:</strong> <span class="list-description">Transforms inputs into a probability distribution.</span></li>
+                        <li class="list-option"><strong>Key Feature:</strong> <span class="list-description">Outputs values in the range (0, 1).</span></li>
+                    </ul>
+                </div>
+                <img src="images/Sigmoid.png" width="400" height="400" alt="Sigmoid Activation Function">
+                <div class="separator"></div>
+            
+                <!-- Tanh -->
+                <div class="type-box" id="tanh">
+                    <h3 class="list-header">Hyperbolic Tangent (Tanh)</h3>
+                    <ul>
+                        <li class="list-option"><strong>Equation:</strong> <span class="list-description">f(x) = (e^x - e^(-x)) / (e^x + e^(-x))</span></li>
+                        <li class="list-option"><strong>Purpose:</strong> <span class="list-description">Similar to Sigmoid but outputs values in the range (-1, 1).</span></li>
+                        <li class="list-option"><strong>Key Feature:</strong> <span class="list-description">Centers data, often leading to faster convergence in training.</span></li>
+                    </ul>
+                </div>
+                <img src="images/Tanh.png" width="400" height="400" alt="Tanh Activation Function">
+                <div class="separator"></div>
+
+                <!-- Softmax -->          
+                <div class="type-box" id="softmax">
+                    <h3 class="list-header">Softmax</h3>
+                    <ul>
+                        <li class="list-option"><strong>Equation:</strong> <span class="list-description">f(x)_i = e^(x_i) / sum(e^(x_j))</span></li>
+                        <li class="list-option"><strong>Purpose:</strong> <span class="list-description">Used in classification tasks to compute probabilities for multi-class outputs.</span></li>
+                        <li class="list-option"><strong>Key Feature:</strong> <span class="list-description">Normalizes outputs to sum to 1.</span></li>
+                    </ul>
+                </div>
+                <img src="images/Softmax.png" width="400" height="400" alt="Softmax Activation Function">
+                <div class="separator"></div>
+            </main>
+
+            <!-- Right Box -->
+            <div class="right-box"></div>
+        </div>  
+    </body>
+</html>

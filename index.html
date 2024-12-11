@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    
+        <title>DNN Types</title>
+    </head>
+    
+    <body> 
+        <!-- Header -->
+        <header class="header"> 
+            <h1>Deep Neural Network Types</h1>
+            
+            <!-- Search Bar -->
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search...">
+            </div>
+        
+            <!-- Navigation Links Container -->
+            <div class="nav-container">
+            
+                <!-- Navigation Link to Activation functions -->
+                <nav>
+                    <a href="activation-functions.html" class="nav-link">Activation Functions Types</a>
+                </nav>
+
+                <!-- Navigation Link to About Me -->
+                <nav>
+                    <a href="about-me.html" class="nav-link">About Me</a>
+                </nav>
+            </div>
+        </header>
+        
+        <!-- Left Sidebar -->
+        <div class="flexbox"> 
+            <nav class="sidebar">
+                <ul>
+                    <li><a href="#what-is-dnn">What is Deep Neural Network?</a></li>
+                    <li><a href="#dfnn">Deep Feedforward</a></li>
+                    <li><a href="#rnn">Recurrent</a></li>
+                    <li><a href="#lstm">Long Short-Term Memory</a></li> 
+                    <li><a href="#gru">Gated Recurrent Unit</a></li> 
+                </ul>
+            </nav>
+
+            <!-- Main Content -->
+            <main class="main-content">
+                <!-- What is Deep Neural Network? Section -->
+                <div class="type-box" id="what-is-dnn">
+                    <h3 class="option">What is Deep Neural Network?</h3>
+                    <p class="description">
+                        A Deep Neural Network (DNN) is a machine learning technique that allows a computer, by training it,
+                        to do tasks that would be very difficult to do using conventional programming techniques. 
+                        Neural network algorithms were inspired by the human brain and its functions. Like the human mind, 
+                        DNNs are designed to work by predicting solutions and drawing conclusions based on previous data and experiences, 
+                        rather than following a rigid list of rules. DNNs are used in various fields such as image recognition, speech recognition, 
+                        natural language processing, and more.
+                    </p>
+                </div>
+                <div class="separator"></div>
+
+                <!-- Deep Feedforward Neural Network (DFNN) -->
+                <div class="type-box" id="dfnn">
+                    <h3 class="list-header">Deep Feedforward Neural Network (DFNN)</h3>
+                    <ul>
+                        <li class="list-option"><strong>Architecture:</strong> <span class="list-description">Comprises an input layer, multiple hidden layers, and an output layer.</span></li>
+                        <li class="list-option"><strong>Purpose:</strong> <span class="list-description">Used for classification and regression tasks, such as image and speech recognition.</span></li>
+                        <li class="list-option"><strong>Key Feature:</strong> <span class="list-description">Hierarchical feature learning through multiple hidden layers.</span></li>
+                    </ul>
+                </div>
+                <img src="images/DFNN.png" width="400" height="400" alt="Deep Feedforward Neural Network (DFNN)">
+                <div class="separator"></div>
+
+                <!-- Recurrent Neural Network (RNN) -->
+                <div class="type-box" id="rnn">
+                    <h3 class="list-header">Recurrent Neural Network (RNN)</h3>
+                    <ul>
+                        <li class="list-option"><strong>Architecture:</strong> <span class="list-description">Consists of interconnected nodes in a loop, allowing information to persist.</span></li>
+                        <li class="list-option"><strong>Purpose:</strong> <span class="list-description">Used for processing sequences of data, such as time series or natural language.</span></li>
+                        <li class="list-option"><strong>Key Feature:</strong> <span class="list-description">Maintains a hidden state that captures information about previous inputs.</span></li>
+                    </ul>
+                </div>
+                <img src="images/RNN.png" width="400" height="400" alt="Recurrent Neural Network (RNN)">
+                <div class="separator"></div>
+            
+                <!-- Long Short-Term Memory Network (LSTM) -->
+                <div class="type-box" id="lstm">
+                    <h3 class="list-header">Long Short-Term Memory Network (LSTM)</h3>
+                    <ul>
+                        <li class="list-option"><strong>Architecture:</strong> <span class="list-description">An advanced RNN architecture that includes memory cells and gating mechanisms.</span></li>
+                        <li class="list-option"><strong>Purpose:</strong> <span class="list-description">Designed to learn long-term dependencies in sequence data.</span></li>
+                        <li class="list-option"><strong>Key Feature:</strong> <span class="list-description">Uses input, output, and forget gates to control the flow of information.</span></li>
+                    </ul>
+                </div>
+                <img src="images/LSTM.png" width="400" height="400" alt="Long Short-Term Memory Network (LSTM)">
+                <div class="separator"></div>
+
+                <!-- Gated Recurrent Unit (GRU) -->          
+                <div class="type-box" id="gru">
+                    <h3 class="list-header">Gated Recurrent Unit (GRU)</h3>
+                    <ul>
+                        <li class="list-option"><strong>Architecture:</strong> <span class="list-description">A simplified version of LSTM that combines the forget and input gates into a single update gate.</span></li>
+                        <li class="list-option"><strong>Purpose:</strong> <span class="list-description">Used for similar applications as LSTMs but with fewer parameters, making them faster to train.</span></li>
+                        <li class="list-option"><strong>Key Feature:</strong> <span class="list-description">Efficiently learns dependencies in sequential data while reducing complexity.</span></li>
+                    </ul>
+                </div>
+                <img src="images/GRU.png" width="400" height="400" alt="Gated Recurrent Unit (GRU)">
+                <div class="separator"></div>
+            </main>
+
+            <!-- Right Box -->
+            <div class="right-box"></div>
+        </div>  
+    </body>
+</html>

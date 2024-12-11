@@ -1,0 +1,167 @@
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Reset default margin and padding */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Text styling */
+.option, .list-header {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333333;
+}
+
+.list-option {
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333333;
+    padding: 5px;
+}
+
+.description, .list-description {
+    font-size: 16px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #333333;
+}
+
+/* Flexbox container to manage layout */
+.flexbox {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: row;
+}
+
+/* Navigation links */
+.nav-link {
+    text-decoration: none;        
+    color: #333333;                
+    padding: 10px 20px;           
+    background-color: #ffffff;   
+    border-radius: 5px;           
+    display: inline-block;        
+    font-size: 16px;              
+    transition: background-color 0.3s;  
+}
+
+/* Navigation links blocks */
+.nav-container {
+    display: flex;                 
+    justify-content: center;       
+    align-items: center;           
+    gap: 10px;                     
+}
+
+/* Header box */
+.header {
+    font-size: 24px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #2e2e2e;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 10px;
+    position: relative;  
+}
+
+/* Search bar */
+.search-container {
+    position: absolute;
+    top: 10px;
+    right: 20px;   
+    z-index: 10;
+}
+
+.search-bar {
+    padding: 8px;
+    width: 200px;
+    font-size: 14px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+.search-bar:focus {
+    border-color: #333333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Left box (Sidebar) */
+.sidebar {
+    width: 300px;
+    height: 100vh;
+    background-color: #e0a96d;
+    margin: 0;  
+    padding: 15px;
+    box-sizing: border-box;  
+    position: sticky;   
+    top: 0;  /* Keeps the sidebar fixed at the top while scrolling */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;  
+}
+
+.sidebar a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;   
+    padding-left: 20px;   
+    display: block;
+    transition: all 0.3s ease;   
+}
+
+.sidebar a::before {
+    content: '•';   
+    font-size: 18px;   
+    color: #333333;   
+    position: absolute;
+    left: 0;   
+    top: 0;   
+}
+
+/* Sidebar hover effect */
+.sidebar a:hover {
+    padding-left: 25px; 
+}
+
+/* Main content area */
+.main-content {
+    flex-grow: 1;
+    background-color: #ffffff;
+    padding: 15px;
+    border-left: 1px solid #cccccc;
+    overflow-y: auto;
+}
+
+.type-box {
+    background-color: #ddc3a5;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+/* Right box */
+.right-box {
+    width: 600px;
+    background-color: #ffffff;
+    border-left: 2px solid #cccccc;
+}
+
+/* Horizontal separator */
+.separator {
+    border-top: 2px solid #cccccc;
+    margin: 15px 0;
+}
